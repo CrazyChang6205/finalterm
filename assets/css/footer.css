@@ -1,0 +1,35 @@
+/* 
+屬性格式順序 :
+    排版定位
+    邊界大小
+    邊框設定
+    背景顏色
+ */
+.show-up{
+    border: 1px solid black;
+}
+.top-box{
+    display: block;
+    position: fixed;
+	width: 70px;
+	height: 70px;
+	padding:25px 15px;
+    border-radius: 10%;
+	font-size: 20px;
+	text-decoration: none;
+	color:black;
+	background: #e7e7e7;
+	right:50px;
+	bottom: 30px;
+    z-index: 2;
+}
+.page-body{
+    background-color: #ddeefc;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #a185fe;
+}

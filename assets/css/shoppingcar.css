@@ -1,0 +1,74 @@
+/* 
+屬性格式順序 :
+    排版定位
+    邊界大小
+    邊框設定
+	文字樣式
+    背景顏色
+ */
+.shopping{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.shoppingcar-title{
+    color: #624CAB;
+	text-align: center;
+	font-weight: bold;
+}
+.shoppingcar-form{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 10px 0px;
+}
+.shop-list{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+    width: 100%;
+}
+.detail-title{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    width: 70% ;
+    padding-left: 30px;
+}
+.detail-title{
+    font-size: large;
+    font-weight: bold;
+}
+.detail{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    width: 70% ;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    border: 3px solid #624CAB;
+    border-radius: 25px;
+    background-color: rgb(223, 230, 235) ;
+}
+.detail img{
+    width: 100px;
+}
+.detail span{
+    font-size: large;
+    font-weight: bold;
+}
+.value{
+    width: 50px;
+    text-align: center;
+}
+.checkout{
+    background-color: #624CAB;
+}

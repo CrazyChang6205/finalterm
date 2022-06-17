@@ -1,0 +1,44 @@
+/* 
+屬性格式順序 :
+    排版定位
+    邊界大小
+    邊框設定
+    背景顏色
+    文字屬性
+ */
+.nav-style{
+    display:flex;           /* 彈性盒繼承宣告 */
+    flex-wrap: nowrap;              /* 換行設定 */
+    align-items: center;            /* 垂直定位 */
+    justify-content: space-evenly; /* 水平定位 */
+    padding-top: 0px;
+    width: 100%;
+    /* border: 10px solid black; */
+    /* background-color: burlywood; */
+}
+.navbar-color{
+    background-color: #C1CEFE;
+    border-color: #e7e7e7;
+}
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-first{
+    float: left;
+    margin-right: 0;
+    margin-left: 0;
+}
+.now-at{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#777;
+    background-color: #aabbff;
+}
+a{
+    text-align: center;
+}

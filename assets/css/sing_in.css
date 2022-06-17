@@ -1,0 +1,34 @@
+/* 
+屬性格式順序 :
+   排版定位
+   邊界大小
+   邊框設定
+   背景顏色
+*/
+.carousel{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.singin-style{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* border: 1px solid black;
+   border-radius: 10%; */
+ }
+.ad-block{
+   display: flex;
+   border: 10px solid rgb(255, 0, 0);
+}
+.form-block{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   height: 80%;
+   width: 80%;
+}
+.form-block h3{
+   font-weight: bold;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/advertise.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/merchandise_display.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/header-menu.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- 首頁 -->
+    <div class="page-body">
+        <!-- 頁首 -->
+        <header>
+            <div class="hearder-style">
+                <div>
+                    <a href="./index.html" target="_self">
+                        <img class="header-logo" src="../assets/photo/head/Logo.png" alt="Logo" title="Logo"/>
+                    </a>
+                </div>
+                <div class="header-button">
+                    <!-- 連結尚未補全 -->
+                    <div>
+                        <input type="button" value="登入" onclick="location='./sing_in.html'">
+                    </div>
+                    <div>
+                        <input type="button" value="註冊" onclick="location='./log_in.html'">
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="header-avatar" src="../assets/photo/head/avatar.png" alt="avatar" title="個人資料">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./shoppingcar.html">
+                            <img class="header-car" src="../assets/photo/head/shoppingcar.png" alt="shoppingcar" title="購物車">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- 第三版 開始引用部分Bootstrap設定 -->
+        <!-- 導航列 -->
+        <nav class="nav-style navbar-color ">
+            <div class="container-fluid">
+                <div class="navbar-first">
+                    <a class="navbar-brand" href="#">Mr.Drink</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="now-at"><a href="#">首頁</a></li>
+                    <li><a href="./merchandise_display.html">所有商品 </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">商品分類 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">飲用水</a></li>
+                            <li><a href="#">沖泡茶/傳統茶</a></li>
+                            <li><a href="#">蔬果汁</a></li>
+                            <li><a href="#">咖啡</a></li>
+                            <li><a href="#">碳酸飲料/乳酸飲料</a></li>
+                            <li><a href="#">鮮乳/豆漿</a></li>
+                            <li><a href="#">運動飲料/能量飲料</a></li>
+                            <li><a href="#">含酒精性飲品</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">活動公告 </a></li>
+                    <li><a href="#">關於我們 </a></li>
+                    <li><a href="#">常見問題 </a></li>
+                    <li><a href="#">討論區 </a></li>
+                    <li><a href="#">聯絡我們 </a></li>
+                </ul>
+                <!-- 搜尋欄 -->
+                <form class="navbar-form navbar-left" action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!-- 動態廣告區塊 -->
+        <article>
+            <div class="container">
+                <h2 style="font-weight:bold; color:rgb(58, 58, 58)">動態廣告 </h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- 廣告陣列宣告 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- 廣告牆壁紙(包含圖片、說明文字) -->
+                    <div class="carousel-inner ad-radius">
+                        <div class="item active">
+                            <img src="../assets/photo/ad/advertise0.jpg" alt="coco" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>摩卡風味可可</h3>
+                                    <p>宇宙無敵霹靂好喝的巧克力飲品!!!</p>
+                                </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../assets/photo/ad/advertise1.jpg" alt="chinese tea" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>高山頂級烏龍</h3>
+                                <p>特別選用三芯二葉，在用了七七四十二天的時間烘培製成</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../assets/photo/ad/advertise2.jpg" alt="Espresso" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>義式濃縮咖啡</h3>
+                                <p>咖啡因成癮者強烈推薦!!!</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../assets/photo/ad/advertise3.jpg" alt="black tea" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>英式伯爵紅茶</h3>
+                                <p>純粹，簡單，清爽</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a href="./merchandise_show.html">
+                            <img src="../assets/photo/ad/advertise4.jpg" alt="orangr" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>可口柳橙汁</h3>
+                                <p>新鮮現榨，低溫運送，營養健康</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+              
+                    <!-- 左右廣告切換鍵 -->
+                    <a class="left carousel-control ad-radius" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control ad-radius" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <h1 class="shelves-title">排行榜</h1>
+            <div>
+                <ul class="shelves list-inline">
+                    <li>
+                        <div class="commodity">
+                            <a href="merchandise_show.html">
+                                <img src="../assets/photo/merchandise/juice.jpg" alt="">
+                            </a>
+		                    <h2>果汁</h2>
+                            <div class="price-haves">
+                                <span>$29</span>
+                                <div>剩餘:10</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commodity">
+                            <img src="../assets/photo/merchandise/water.jpg" alt="">
+		                    <h2>水</h2>
+		                    <div class="price-haves">
+                                <span>$15</span>
+                                <div>剩餘:99</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commodity">
+                            <img src="../assets/photo/merchandise/tea.jpg" alt="">
+		                    <h2>茶</h2>
+		                    <div class="price-haves">
+                                <span>$50</span>
+                                <div>剩餘:38</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="shelves-title">最新商品</h1>
+            <div>
+                <ul class="shelves list-inline">
+                    <li>
+                        <div class="commodity">
+                            <a href="merchandise_show.html">
+                                <img src="../assets/photo/merchandise/juice.jpg" alt="">
+                            </a>
+		                    <h2>果汁</h2>
+                            <div class="price-haves">
+                                <span>$29</span>
+                                <div>剩餘:10</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commodity">
+                            <img src="../assets/photo/merchandise/water.jpg" alt="">
+		                    <h2>水</h2>
+		                    <div class="price-haves">
+                                <span>$15</span>
+                                <div>剩餘:99</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commodity">
+                            <img src="../assets/photo/merchandise/tea.jpg" alt="">
+		                    <h2>茶</h2>
+		                    <div class="price-haves">
+                                <span>$50</span>
+                                <div>剩餘:38</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </article>
+        <section>
+
+        </section>
+
+        <div class="top-box"><a href="#">TOP</a></div>
+        <footer>
+            <p><small>&copy; 2022 Demo on 110-2 多媒體網程聯合專案 from group 30 | 訪客人數:1 </small></p>
+        </footer>
+    </div>
+        
+    <!-- 跑馬燈 -->
+    <!-- <marquee>!!! 這是跑馬燈 !!!</marquee> -->
+
+</body>
+</html>

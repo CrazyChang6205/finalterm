@@ -1,0 +1,84 @@
+/* 
+屬性格式順序 :
+    排版定位
+    邊界大小
+    邊框設定
+    背景顏色
+ */
+.page-body{
+    display:block ;
+    justify-content: center;
+}
+header{
+    /*position: fixed;*/        /* 瀏覽器絕對位置 */
+    top: 0;
+    z-index: 600;
+    width: 100%;
+    background: #f9f9f9;
+}
+.hearder-style{
+    display:flex;           /* 彈性盒繼承宣告 */
+    flex-wrap: nowrap;              /* 換行設定 */
+    align-items: center;            /* 垂直定位 */
+    justify-content: space-between; /* 水平定位 */
+    height: 100%;
+    /* background-color: aqua; */
+}
+.header-logo{
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+}
+.header-button{
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+}
+/*.header-login{
+
+}
+.header-singin{
+
+}*/
+.header-avatar{
+    border-radius: 100%;
+}
+/*.header-car{
+
+}*/
+
+/* menu */
+.menu > span{
+   display: block;
+   margin-right: 10px;
+   width: 28px;
+   height: 2px;
+   border-radius: 9999px;
+   background-color: black;
+}
+.menu > span:not(:last-child){
+    margin-bottom: 7px;
+}
+.menu,.menu > span{
+    transition: all .5s ease-in-out;
+}
+.menu.active{
+    transition-delay: 1s;
+    transform: rotate(45deg);
+}
+.menu.active > span:nth-child(2){
+    width: 0;
+}
+.menu.active > span:nth-child(1),
+.menu.active > span:nth-child(3){
+    transition-delay: 0.5s;
+}
+.menu.active > span:nth-child(1){
+    transform: translateY(9px);
+}
+.menu.active > span:nth-child(3){
+    transform: translateY(-9px) rotate(90deg);
+}
