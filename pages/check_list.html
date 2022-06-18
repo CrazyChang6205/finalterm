@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/merchandise_show.css">
+    <link rel="stylesheet" href="../assets/css/shoppingcar.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../assets/js/header-menu.js" type="text/javascript"></script>
+    <script src="../assets/js/shoppingcar-but.js"></script>
 </head>
 <body>
     <!-- 商品瀏覽介面 -->
@@ -38,7 +39,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="./shoppingcar.html">
+                        <a href="">
                             <img class="header-car" src="../assets/photo/head/shoppingcar.png" alt="shoppingcar" title="購物車">
                         </a>
                     </div>
@@ -56,7 +57,7 @@
         <nav class="nav-style navbar-color">
             <div class="container-fluid">
                 <div class="navbar-first">
-                    <a class="navbar-brand" href="./index.html">Mr.Drink</a>
+                    <a class="navbar-brand" href="#">Mr.Drink</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">首頁</a></li>
@@ -93,69 +94,50 @@
             </div>
         </nav>
         <!-- 商品展示區塊 -->
-        <article class="">
-            <h1>商品 - 果汁</h1>
-            <div class="merchandise-form">
-                <form class="">
-                    <div class="commodity">
-                        <img src="../assets/photo/merchandise/juice.jpg" alt="">
+        <article class="shopping">
+            <h1 class="shoppingcar-title">購物車</h1>
+            
+            <div class="shoppingcar-form">
+                <form class="shop-list">
+                    <div class="detail-title">
+                        <span>照片</span>
+                        <span>商品名稱</span>
+                        <span>單價</span>
+                        <span>數量</span>
+                        <span></span>
+                    </div>
+                    <div class="detail">
                         <div>
-                            <h2>果汁</h2>
-                            <div class="price-haves">
-                                <span>$29</span>
-                                <div>剩餘:10</div>
-                            </div>
+                            <img src="../assets/photo/merchandise/juice.jpg" alt="">
+                        </div>
+                        <div><span>果汁</span></div>
+                        <div><span>$30</span></div>
+                        <div>
+                            <button onclick="dec(0)">&nbsp-&nbsp</button>
+                                <input type="text" id="detail num" value="3" class="value">
+                            <button onclick="add(0)">&nbsp+&nbsp</button>
                         </div>
                         <div>
-                            <button type="button" onclick="del(this)">加入購物車</button>
+                            <button type="button" onclick="del(this)">刪除</button>
                         </div>
                     </div>
-                    <h3>留言板</h3>
-                    <div class="block-talk">
-                        <div class="commit">  
-                            <font size="5"><strong>商品評論</strong></font><br>
-                            <div class="talk">
-                                <font size="4">用戶1</font>  
-                                    <span class="fa fa-star checked"></span> 
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span><br>
-                                <font size="3">留言1</font>           
-                            </div>
-                            <div class="talk">
-                                <font size="4">用戶2</font>  
-                                    <span class="fa fa-star checked"></span> 
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span><br>
-                                <font size="3">留言2</font>
-                            </div>
-                            <font size="3" ><strong>評價</strong></font>
-                            <div class="rating">
-                                <input type="radio" id="star5" name="rating" value="5" hidden>
-                                <label for="star5"></label>
-                                <input type="radio" id="star4" name="rating" value="4" hidden>
-                                <label for="star4"></label>
-                                <input type="radio" id="star3" name="rating" value="3" hidden>
-                                <label for="star3"></label>
-                                   <input type="radio" id="star2" name="rating" value="2" hidden>
-                                  <label for="star2"></label>
-                                   <input type="radio" id="star1" name="rating" value="1" hidden>
-                                <label for="star1"></label>
-                            </div>
-                        
-                            <font size="3"><strong>評論</strong></font><br>
-                            <form>
-                                <textarea class="commit" name="memo" cols="30" rows="5" wrap="hard"> </textarea><br> <!--評論欄-->			
-                                <!--評論按鈕-->
-                                <div class="sendbutton">
-                                    <input  type="submit" name="send" value="送出">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input  type="reset" name="rewrite" value="重寫">
-                                </div>
-                            </form>
-                        </div>  
+                    <div class="detail">
+                        <div>
+                            <img src="../assets/photo/merchandise/water.jpg" alt="">
+                        </div>
+                        <div><span>水</span></div>
+                        <div><span>$15</span></div>
+                        <div>
+                            <button onclick="dec(1)">&nbsp-&nbsp</button>
+                                <input type="text" id="detail num" value="5" class="value">
+                            <button onclick="add(1)">&nbsp+&nbsp</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="del(this)">刪除</button>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="button" value="確認訂單" onclick="location='./user.html'">
                     </div>
                 </form>
             </div>
